@@ -7,8 +7,8 @@ doLayout = function(G, layoutFunc, title = "") {
 	Xn = L[,1]
 	Yn = L[,2]
 	vs = V(G)
-	es = as.data.frame(get.edgelist(G))
-	
+	es = G %>% get.edgelist %>% as.data.frame
+
 	network = plot_ly(type = "scatter", x = Xn, y = Yn, mode = "markers",
 						text = vs$label, hoverinfo = "text")
 
@@ -27,26 +27,26 @@ doLayout = function(G, layoutFunc, title = "") {
 		)
 	}
 
-	layout(network, title = title, shapes = edgeShapes,
-			xaxis = list(title = "", showgrid = FALSE, showticklabels = FALSE, zeroline = FALSE),
-			yaxis = list(title = "", showgrid = FALSE, showticklabels = FALSE, zeroline = FALSE)
-		)
+	network %>% layout(title = title, shapes = edgeShapes,
+		xaxis = list(title = "", showgrid = FALSE, showticklabels = FALSE, zeroline = FALSE),
+		yaxis = list(title = "", showgrid = FALSE, showticklabels = FALSE, zeroline = FALSE)
+	)
 }
 
 G = read.graph("test_graph.gml", format = c("gml"))
 
 # shiny
 ui = fluidPage(
-		titlePanel("Test Graph"),
-		plotlyOutput("fr"),
-		plotlyOutput("circle")
-		# plotlyOutput("tree")
-	)
+	titlePanel("Test Graph"),
+	plotlyOutput("fr"),
+	plotlyOutput("circ")
+	# plotlyOutput("tree")
+)
 
 server = function(input, output) {
-	output$fr     = renderPlotly({ doLayout(G, layout.fruchterman.reingold, title = "Fruchterman Reingold") })
-	output$circle = renderPlotly({ doLayout(G, layout.circle,               title = "Circle") })
-	# output$tree = renderPlotly({ doLayout(G, layout_as_tree, title = "Tree") })
+	output$fr   = renderPlotly(doLayout(G, layout.fruchterman.reingold, title = "Fruchterman Reingold"))
+	output$circ = renderPlotly(doLayout(G, layout.circle,               title = "Circle"))
+	# output$tree = renderPlotly(doLayout(G, layout_as_tree, title = "Tree"))
 }
 
 
