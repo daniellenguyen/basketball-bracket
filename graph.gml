@@ -100,7 +100,7 @@ id 12
 node [
 name "UNC Asheville"
 label "South"
-115
+id 115
 ]
 
 comment "West"
@@ -108,36 +108,293 @@ comment "West"
 node [
 name "Oregon"
 label "West"
+id 21
 ]
 
 node [
 name "Holy Cross"
 label "West"
+id 216
 ]
 
 node [
 name "Saint Joseph's"
 label "West"
+id 28
 ]
 
 node [
 name "Cincinnati"
 label "West"
+id 29
 ]
 
 node [
 name "Baylor"
 label "West"
+id 25
 ]
 
 node [
 name "Yale"
 label "West"
+id 212
 ]
 
 node [
 name "Duke"
 label "West"
+id 24
+]
+
+node [
+name "UNCW"
+label "West"
+id 213
+]
+
+node [
+name "Texas"
+label "West"
+id 26
+]
+
+node [
+name "UNI"
+label "West"
+id 211
+]
+
+node [
+name "Texas AM"
+label "West"
+id 23
+]
+
+node [
+name "Green Bay"
+label "West"
+id 214
+]
+
+node [
+name "Oregon State"
+label "West"
+id 27
+]
+
+node [
+name "VCU"
+label "West"
+id 210
+]
+
+node [
+name "Oklahoma"
+label "West"
+id 22
+]
+
+node [
+name "CSU Bakersfield"
+label "West"
+id 215
+]
+
+comment "East"
+
+node [
+name "North Carolina"
+label "East"
+id 31
+]
+
+node [
+name "FGCU"
+label "East"
+id 316
+]
+
+node [
+name "USC"
+label "East"
+id 38
+]
+
+node [
+name "Providence"
+label "East"
+id 39
+]
+
+node [
+name "Indiana"
+label "East"
+id 35
+]
+
+node [
+name "Chattanooga"
+label "East"
+id 312
+]
+
+node [
+name "Kentucky"
+label "East"
+id 34
+]
+
+node [
+name "Stony Brook"
+label "East"
+id 313
+]
+
+node [
+name "Notre Dame"
+label "East"
+id 36
+]
+
+node [
+name "Michigan"
+label "East"
+id 311
+]
+
+node [
+name "West Virginia"
+label "East"
+id 33
+]
+
+node [
+name "Steph. F. Austin"
+label "East"
+id 314
+]
+
+node [
+name "Wisconsin"
+label "East"
+id 37
+]
+
+node [
+name "Pittsburgh"
+label "East"
+id 310
+]
+
+node [
+name "Xavier"
+label "East"
+id 32
+]
+
+node [
+name "Weber State"
+label "East"
+id 315
+]
+
+comment "Midwest"
+
+node [
+name "Virginia"
+label "Midwest"
+id 41
+]
+
+node [
+name "Hampton"
+label "Midwest"
+id 416
+]
+
+node [
+name "Texas Tech"
+label "Midwest"
+id 48
+]
+
+node [
+name "Butler"
+label "Midwest"
+id 49
+]
+
+node [
+name "Purdue"
+label "Midwest"
+id 45
+]
+
+node [
+name "Little Rock"
+label "Midwest"
+id 412
+]
+
+node [
+name "Iowa State"
+label "Midwest"
+id 44
+]
+
+node [
+name "Iona"
+label "Midwest"
+id 413
+]
+
+node [
+name "Seton Hall"
+label "Midwest"
+id 46
+]
+
+node [
+name "Gonzaga"
+label "Midwest"
+id 411
+]
+
+node [
+name "Utah"
+label "Midwest"
+id 43
+]
+
+node [
+name "Fresno State"
+label "Midwest"
+id 414
+]
+
+node [
+name "Dayton"
+label "Midwest"
+id 47
+]
+
+node [
+name "Syracuse"
+label "Midwest"
+id 410
+]
+
+node [
+name "Michigan State"
+label "Midwest"
+id 42
+]
+
+node [
+name "Middle Tenn."
+label "Midwest"
+id 415
 ]
 
 comment "South edges"
