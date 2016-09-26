@@ -511,4 +511,393 @@ label 4
 label "South"
 ]
 
+comment "West edges"
+
+edge [
+comment "Oregon, Holy Cross"
+source 21
+target 216
+label 1
+label "West"
+]
+
+edge [
+comment "Saint Joseph's, Cincinnati"
+source 28
+target 29
+label 1
+label "West"
+]
+
+edge [
+comment "Yale, Baylor"
+source 212
+target 25
+label 1
+label "West"
+]
+
+edge [
+comment "Duke, UNCW"
+source 24
+target 213
+label 1
+label "West"
+]
+
+edge [
+comment "UNI, Texas"
+source 211
+target 26
+label 1
+label "West"
+]
+
+edge [
+comment "Texas A&M, Green Bay"
+source 23
+target 214
+label 1
+label "West"
+]
+
+edge [
+comment "VCU, Oregon State"
+source 210
+target 27
+label 1
+label "West"
+]
+
+edge [
+comment "Oklahoma, CSU Bakersfield"
+source 22
+target 215
+label 1
+label "West"
+]
+
+edge [
+comment "Oregon, Saint Joseph's"
+source 21
+target 28
+label 2
+label "West"
+]
+
+edge [
+comment "Duke, Yale"
+source 24
+target 212
+label 2
+label "West"
+]
+
+edge [
+comment "Texas A&M, UNI"
+source 23
+target 211
+label 2
+label "West"
+]
+
+edge [
+comment "Oklahoma, VCU"
+source 22
+target 210
+label 2
+label "West"
+]
+
+edge [
+comment "Oregon, Duke"
+source 21
+target 24
+label 3
+label "West"
+]
+
+edge [
+comment "Oklahoma, Texas A&M"
+source 22
+target 23
+label 3
+label "West"
+]
+
+edge [
+comment "Oklahoma, Oregon"
+source 22
+target 21
+label 4
+label "West"
+]
+
+comment "East edges"
+
+edge [
+comment "North Carolina, FGCU"
+source 31
+target 316
+label 1
+label "East"
+]
+
+edge [
+comment "Providence, USC"
+source 39
+target 38
+label 1
+label "East"
+]
+
+edge [
+comment "Indiana, Chattanooga"
+source 35
+target 312
+label 1
+label "East"
+]
+
+edge [
+comment "Kentucky, Stony Brook"
+source 34
+target 313
+label 1
+label "East"
+]
+
+edge [
+comment "Notre Dame, Michigan"
+source 36
+target 311
+label 1
+label "East"
+]
+
+edge [
+comment "Steph. F. Austin, West Virginia"
+source 314
+target 33
+label 1
+label "East"
+]
+
+edge [
+comment "Wisconsin, Pittsburgh"
+source 37
+target 310
+label 1
+label "East"
+]
+
+edge [
+comment "Xavier, Weber State"
+source 32
+target 315
+label 1
+label "East"
+]
+
+edge [
+comment "North Carolina, Providence"
+source 31
+target 39
+label 2
+label "East"
+]
+
+edge [
+comment "Indiana, Kentucky"
+source 35
+target 34
+label 2
+label "East"
+]
+
+edge [
+comment "Notre Dame, Steph. F. Austin"
+source 36
+target 314
+label 2
+label "East"
+]
+
+edge [
+comment "Wisconsin, Xavier"
+source 37
+target 32
+label 2
+label "East"
+]
+
+edge [
+comment "North Carolina, Indiana"
+source 31
+target 35
+label 3
+label "East"
+]
+
+edge [
+comment "Notre Dame, Wisconsin"
+source 36
+target 37
+label 3
+label "East"
+]
+
+edge [
+comment "North Carolina, Notre Dame"
+source 31
+target 36
+label 4
+label "East"
+]
+
+comment "Midwest edges"
+
+edge [
+comment "Virginia, Hampton"
+source 41
+target 416
+label 1
+label "Midwest"
+]
+
+edge [
+comment "Butler, Texas Tech"
+source 49
+target 48
+label 1
+label "Midwest"
+]
+
+edge [
+comment "Little Rock, Purdue"
+source 412
+target 45
+label 1
+label "Midwest"
+]
+
+edge [
+comment "Iowa State, Iona"
+source 44
+target 413
+label 1
+label "Midwest"
+]
+
+edge [
+comment "Gonzaga, Seton Hall"
+source 411
+target 46
+label 1
+label "Midwest"
+]
+
+edge [
+comment "Utah, Fresno State"
+source 43
+target 414
+label 1
+label "Midwest"
+]
+
+edge [
+comment "Syracuse, Dayton"
+source 410
+target 47
+label 1
+label "Midwest"
+]
+
+edge [
+comment "Middle Tenn., Michigan State"
+source 415
+target 42
+label 1
+label "Midwest"
+]
+
+edge [
+comment "Virginia, Butler"
+source 41
+target 49
+label 2
+label "Midwest"
+]
+
+edge [
+comment "Iowa State, Little Rock"
+source 44
+target 412
+label 2
+label "Midwest"
+]
+
+edge [
+comment "Gonzaga, Utah"
+source 411
+target 43
+label 2
+label "Midwest"
+]
+
+edge [
+comment "Syracuse, Middle Tenn."
+source 410
+target 415
+label 2
+label "Midwest"
+]
+
+edge [
+comment "Virginia, Iowa State"
+source 41
+target 44
+label 3
+label "Midwest"
+]
+
+edge [
+comment "Syracuse, Gonzaga"
+source 410
+target 411
+label 3
+label "Midwest"
+]
+
+edge [
+comment "Syracuse, Virginia"
+source 410
+target 41
+label 4
+label "Midwest"
+]
+
+comment "Final Four"
+
+edge [
+comment "Villanova, Oklahoma"
+source 12
+target 22
+label "Final Four"
+]
+
+edge [
+comment "North Carolina, Syracuse"
+source 31
+target 410
+label "Final Four"
+]
+
+edge [
+comment "Villanova, North Carolina"
+source 12
+target 31
+label "Final Four"
+]
+
 ]
