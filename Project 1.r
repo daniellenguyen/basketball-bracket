@@ -33,7 +33,7 @@ doLayout = function(G, layoutFunc, title = "") {
 	)
 }
 
-G = read.graph("test_graph.gml", format = c("gml"))
+G = read.graph("graph.gml", format = c("gml"))
 
 # shiny
 ui = fluidPage(
