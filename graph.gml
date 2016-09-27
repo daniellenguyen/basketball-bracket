@@ -1,4 +1,4 @@
-graph[
+graph [
 comment "Basketball bracket tree"
 comment "South is 1, West is 2, East is 3, Midwest is 4"
 directed 0
