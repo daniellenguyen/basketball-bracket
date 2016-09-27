@@ -4,20 +4,48 @@ require(igraph)
 
 doLayout = function(G, layoutFunc, title = "") {
 	L = layoutFunc(G)
+	vs = V(G)
 	Xn = L[,1]
 	Yn = L[,2]
-	vs = V(G)
-	es = G %>% get.edgelist %>% as.data.frame # correct
+	es = G %>% get.edgelist %>% as.data.frame
 
-	print(Xn)
+	a1 = list()
+	a2 = list()
+	for (i in 1:length(es[1]$V1)) {
+		v1 = es[i,]$V1
+		v2 = es[i,]$V2
+
+		a1[[i]] = list(
+			x = Xn[v1],
+			y = Yn[v1],
+			text = paste(v1),
+			xref = "x",
+			yref = "y"
+		)
+
+		a2[[i]] = list(
+			x = Xn[v2],
+			y = Yn[v2],
+			text = paste(v2),
+			xref = "x",
+			yref = "y"
+		)
+	}
+
+	# print(es)
 
 	network = plot_ly(type = "scatter", x = Xn, y = Yn, mode = "markers",
-						text = vs$name, hoverinfo = "text")
+		annotations = append(a1, a2))
+
+	# print(network)
 
 	edgeShapes = list()
-	for (i in (1:length(es[1]$V1))) {
+	for (i in 1:length(es[1]$V1)) {
 		v0 = es[i,]$V1
 		v1 = es[i,]$V2
+
+		print(v0)
+		print(paste("(", Xn[v0], ", ", Yn[v0], ")"))
 
 		edgeShapes[[i]] = list(
 			type = "line",
@@ -27,13 +55,9 @@ doLayout = function(G, layoutFunc, title = "") {
 			x1 = Xn[v1],
 			y1 = Yn[v1]
 		)
-		print(paste(v0, "->", v1))
-		print(paste("(", Xn[v0], ", ", Yn[v0], ") -> (", 
-						 Xn[v1], ", ", Yn[v1], ")", sep = ""))
-		print("")
 	}
 
-	network %>% layout(title = title, shapes = edgeShapes,
+	network %>% layout(title = title, shapes = edgeShapes, annotations = a2,
 		xaxis = list(title = "", showgrid = TRUE, showticklabels = TRUE, zeroline = TRUE),
 		yaxis = list(title = "", showgrid = TRUE, showticklabels = TRUE, zeroline = TRUE)
 	)
@@ -45,12 +69,14 @@ G = read.graph("graph.gml", format = c("gml"))
 ui = fluidPage(
 	titlePanel("Test Graph"),
 	plotlyOutput("fr"),
-	plotlyOutput("tree")
+	# plotlyOutput("tree"),
+	plotlyOutput("circle")
 )
 
 server = function(input, output) {
 	output$fr   = renderPlotly(doLayout(G, layout.fruchterman.reingold, title = "FR"))
 	# output$tree = renderPlotly(doLayout(G, layout_as_tree, title = "Tree"))
+	output$circle = renderPlotly(doLayout(G, layout.circle, title = "Circle"))
 }
 
 
