@@ -45,7 +45,8 @@ doLayout = function(G, layoutFunc, title = "") {
 		v1 = es[i,]$V2
 
 		print(v0)
-		print(paste("(", Xn[v0], ", ", Yn[v0], ")"))
+		print(paste("(", Xn[v0], ", ", Yn[v0], ")"), sep = "")
+		print("")
 
 		edgeShapes[[i]] = list(
 			type = "line",
@@ -68,13 +69,13 @@ G = read.graph("graph.gml", format = c("gml"))
 # shiny
 ui = fluidPage(
 	titlePanel("Test Graph"),
-	plotlyOutput("fr"),
+	# plotlyOutput("fr"),
 	# plotlyOutput("tree"),
 	plotlyOutput("circle")
 )
 
 server = function(input, output) {
-	output$fr   = renderPlotly(doLayout(G, layout.fruchterman.reingold, title = "FR"))
+	# output$fr   = renderPlotly(doLayout(G, layout.fruchterman.reingold, title = "FR"))
 	# output$tree = renderPlotly(doLayout(G, layout_as_tree, title = "Tree"))
 	output$circle = renderPlotly(doLayout(G, layout.circle, title = "Circle"))
 }
