@@ -1,0 +1,14 @@
+Rscript demo.r
+shinyUI(fluidPage(#
+titlePanel("title panel"),#
+#
+sidebarLayout(#
+	position = "right" # optional#
+	sidebarPanel("sidebar panel"), # take function output#
+	mainPanel("main panel")        # takes function output#
+	)#
+))#
+#
+shinyServer(function(input, output) {#
+	# where #
+})
