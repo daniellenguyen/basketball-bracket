@@ -8,20 +8,66 @@ vs = data.frame(id = vs$name, label = vs$name, group = vs$label)
 es = G %>% get.edgelist %>% as.data.frame
 colnames(es) = c("from", "to")
 
-regions = vs[['group']]
+splitGroups = vs$group %>% as.character %>% strsplit(",") %>% as.data.frame %>% t
+regions 	 = splitGroups[,1]
+demographics = splitGroups[,2]
+
+vs$group = regions
+solver = 'barnesHut'
 
 server = function(input, output) {
+	observeEvent(input$demographicButton, {
+		vs$group = demographics
+		output$default = renderVisNetwork(
+			visNetwork(vs, es, width = "100%") %>% 
+			visEdges(arrows = "from") %>%
+			visGroups %>%
+			visLegend %>%
+			visPhysics(solver = solver)
+		)
+	})
+
+	observeEvent(input$regionButton, {
+		vs$group = regions
+		output$default = renderVisNetwork(
+			visNetwork(vs, es, width = "100%") %>% 
+			visEdges(arrows = "from") %>%
+			visGroups %>%
+			visLegend %>%
+			visPhysics(solver = solver)
+		)
+	})
+
+	observeEvent(input$solver, {
+		solver = input$solver
+		output$default = renderVisNetwork(
+			visNetwork(vs, es, width = "100%") %>%
+			visEdges(arrows = "from") %>%
+			visGroups %>%
+			visLegend %>%
+			visPhysics(solver = solver)
+		)
+	})
+
 	output$default = renderVisNetwork(
-		visNetwork(vs, es, width = "100%") %>% 
+		visNetwork(vs, es, width = "100%") %>%  # Kamada Kawai layout algorithm
 		visEdges(arrows = "from") %>%
 		visGroups %>%
-		visLegend
+		visLegend %>%
+		visPhysics(solver = solver)
 	)
 }
 
 ui <- fluidPage(
 	titlePanel("NCAA Teams"),
-    visNetworkOutput("default", height = "900px")
+    actionButton(inputId = "regionButton", 	  	label = "Show Regions"),
+    actionButton(inputId = "demographicButton", label = "Show Demographics"),
+    radioButtons("solver", "Physics Solver:",
+		c("Barnes Hut"    = "barnesHut",
+		  "Repulsion"     = "repulsion",
+		  "Force Atlas 2" = "forceAtlas2Based")
+	),
+    visNetworkOutput("default", height = "800px")
 )
 
 shinyApp(ui = ui, server = server)
