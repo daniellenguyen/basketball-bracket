@@ -10,96 +10,112 @@ comment "South"
 node [
 name "Kansas"
 label "South"
+label "public"
 id 11
 ]
 
 node [
 name "Austin Peay"
 label "South"
+label "public"
 id 116
 ]
 
 node [
 name "Colorado"
 label "South"
+label "public"
 id 18
 ]
 
 node [
 name "Connecticut"
 label "South"
+label "public"
 id 19
 ]
 
 node [
 name "Maryland"
 label "South"
+label "public"
 id 15
 ]
 
 node [
 name "South Dakota St."
 label "South"
+label "public"
 id 112
 ]
 
 node [
 name "California"
 label "South"
+label "public"
 id 14
 ]
 
 node [
 name "Hawaii"
 label "South"
+label "public"
 id 113
 ]
 
 node [
 name "Arizona"
 label "South"
+label "public"
 id 16
 ]
 
 node [
 name "Wichita State"
 label "South"
+label "public"
 id 111
 ]
 
 node [
 name "Miami (Fla.)"
 label "South"
+label "private"
 id 13
 ]
 
 node [
 name "Buffalo"
 label "South"
+label "public"
 id 114
 ]
 
 node [
 name "Iowa"
 label "South"
+label "public"
 id 17
 ]
 
 node [
 name "Temple"
 label "South"
+label "public"
 id 110
 ]
 
 node [
 name "Villanova"
 label "South"
+label "private"
 id 12
 ]
 
 node [
 name "UNC Asheville"
 label "South"
+label "public"
 id 115
 ]
 
@@ -108,96 +124,112 @@ comment "West"
 node [
 name "Oregon"
 label "West"
+label "public"
 id 21
 ]
 
 node [
 name "Holy Cross"
 label "West"
+label "private"
 id 216
 ]
 
 node [
 name "Saint Joseph's"
 label "West"
+label "private"
 id 28
 ]
 
 node [
 name "Cincinnati"
 label "West"
+label "public"
 id 29
 ]
 
 node [
 name "Baylor"
 label "West"
+label "private"
 id 25
 ]
 
 node [
 name "Yale"
 label "West"
+label "private"
 id 212
 ]
 
 node [
 name "Duke"
 label "West"
+label "private"
 id 24
 ]
 
 node [
 name "UNCW"
 label "West"
+label "public"
 id 213
 ]
 
 node [
 name "Texas"
 label "West"
+label "public"
 id 26
 ]
 
 node [
 name "UNI"
 label "West"
+label "public"
 id 211
 ]
 
 node [
 name "Texas AM"
 label "West"
+label "public"
 id 23
 ]
 
 node [
 name "Green Bay"
 label "West"
+label "public"
 id 214
 ]
 
 node [
 name "Oregon State"
 label "West"
+label "public"
 id 27
 ]
 
 node [
 name "VCU"
 label "West"
+label "public"
 id 210
 ]
 
 node [
 name "Oklahoma"
 label "West"
+label "public"
 id 22
 ]
 
 node [
 name "CSU Bakersfield"
 label "West"
+label "public"
 id 215
 ]
 
@@ -206,96 +238,112 @@ comment "East"
 node [
 name "North Carolina"
 label "East"
+label "public"
 id 31
 ]
 
 node [
 name "FGCU"
 label "East"
+label "public"
 id 316
 ]
 
 node [
 name "USC"
 label "East"
+label "private"
 id 38
 ]
 
 node [
 name "Providence"
 label "East"
+label "private"
 id 39
 ]
 
 node [
 name "Indiana"
 label "East"
+label "public"
 id 35
 ]
 
 node [
 name "Chattanooga"
 label "East"
+label "public"
 id 312
 ]
 
 node [
 name "Kentucky"
 label "East"
+label "public"
 id 34
 ]
 
 node [
 name "Stony Brook"
 label "East"
+label "public"
 id 313
 ]
 
 node [
 name "Notre Dame"
 label "East"
+label "private"
 id 36
 ]
 
 node [
 name "Michigan"
 label "East"
+label "public"
 id 311
 ]
 
 node [
 name "West Virginia"
 label "East"
+label "public"
 id 33
 ]
 
 node [
 name "Steph. F. Austin"
 label "East"
+label "public"
 id 314
 ]
 
 node [
 name "Wisconsin"
 label "East"
+label "public"
 id 37
 ]
 
 node [
 name "Pittsburgh"
 label "East"
+label "public-private"
 id 310
 ]
 
 node [
 name "Xavier"
 label "East"
+label "private"
 id 32
 ]
 
 node [
 name "Weber State"
 label "East"
+label "public"
 id 315
 ]
 
@@ -304,96 +352,112 @@ comment "Midwest"
 node [
 name "Virginia"
 label "Midwest"
+label "public"
 id 41
 ]
 
 node [
 name "Hampton"
 label "Midwest"
+label "private"
 id 416
 ]
 
 node [
 name "Texas Tech"
 label "Midwest"
+label "public"
 id 48
 ]
 
 node [
 name "Butler"
 label "Midwest"
+label "private"
 id 49
 ]
 
 node [
 name "Purdue"
 label "Midwest"
+label "public"
 id 45
 ]
 
 node [
 name "Little Rock"
 label "Midwest"
+label "public"
 id 412
 ]
 
 node [
 name "Iowa State"
 label "Midwest"
+label "public"
 id 44
 ]
 
 node [
 name "Iona"
 label "Midwest"
+label "private"
 id 413
 ]
 
 node [
 name "Seton Hall"
 label "Midwest"
+label "private"
 id 46
 ]
 
 node [
 name "Gonzaga"
 label "Midwest"
+label "private"
 id 411
 ]
 
 node [
 name "Utah"
 label "Midwest"
+label "public"
 id 43
 ]
 
 node [
 name "Fresno State"
 label "Midwest"
+label "public"
 id 414
 ]
 
 node [
 name "Dayton"
 label "Midwest"
+label "private"
 id 47
 ]
 
 node [
 name "Syracuse"
 label "Midwest"
+label "private"
 id 410
 ]
 
 node [
 name "Michigan State"
 label "Midwest"
+label "public"
 id 42
 ]
 
 node [
 name "Middle Tenn."
 label "Midwest"
+label "public"
 id 415
 ]
 
