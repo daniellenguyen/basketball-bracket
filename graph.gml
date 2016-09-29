@@ -440,6 +440,14 @@ label "South"
 ]
 
 edge [
+comment "Miami (Fla.), Buffalo"
+source 13
+target 114
+label 1
+label "South"
+]
+
+edge [
 comment "Iowa, Temple"
 source 17
 target 110
